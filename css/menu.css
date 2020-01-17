@@ -55,17 +55,24 @@
   background: inherit;
 }
 
+/* Move lines down */
 .menu-wrap .hamburger > div::after {
   top: 10px;
 }
 
-/* Toogler Animation */
+/* Toggler Animation */
 .menu-wrap .toggler:checked + .hamburger > div {
   transform: rotate(135deg);
 }
 
+/* Turns lines Into X */
 .menu-wrap .toggler:checked + .hamburger > div:before,
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   transform: rotate(90deg);
+}
+
+/* Rotate on Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
 }
